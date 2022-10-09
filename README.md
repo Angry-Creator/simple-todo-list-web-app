@@ -2,7 +2,7 @@ This code should not be copied without permission from me...
 
 This is a simple todo-list web application that is coded in plain HTML5, CSS3, Javascript.
 
-Function of this simple web app.
+The functions of this simple web app are;
 (1) It stores the todo-list in the browsers 
 This simple web app stores it's todo-list in the local storage.
 (2) On Document Content Load, It retreives the stored list and loads it.
