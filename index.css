@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    border: 1px solid black;
+    padding: 20px 15px;
+    margin: 0 10px;
+    text-align: center;
+    height: 100vh;
+    overflow: auto;
+}
+
+#form-field{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid black;
+}
+
+#todo-list-text{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+input{
+    min-height: 40px;
+    padding: 8px 16px;
+    margin: 0 10px;
+}
+
+input[id="todo-input-box"]{
+    font-size: 20px;
+}
+
+input:hover{
+    outline: none;
+    box-shadow: 0px 0px 3px 2px black;
+}
+
+input:focus{
+    outline: none;
+    box-shadow: 0px 0px 5px 2px black;
+}
+
+input[id="submit-btn"], input[id="clear-all-btn"]{
+    min-width: 100px;
+    color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+input[id="submit-btn"]{
+    background-color: rgb(7, 209, 7);
+}
+
+input[id="clear-all-btn"]{
+    background-color: rgb(238, 66, 66);
+}
+
+input[id="todo-input-box"]{
+    min-width: 50%;
+}
+
+.todo-wrapper{
+    display: flex;
+    border: 1px solid black;
+    font-size: 25px;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.counter{
+    margin-right: 10px;
+    padding-right: 10px;
+    border-right: 5px solid black;
+}
+
+.todoText{
+    margin-right: auto;
+} 
+
+.deleteBtn{
+    background-color: rgb(238, 66, 66);
+}
+.doneBtn{
+    background-color: rgb(7, 209, 7);
+}
+
+.deleteBtn, .doneBtn{
+    color: whitesmoke;
+    padding: 4px 16px;
+    margin: 0 10px;
+    border-radius: 5px;
+}
+.deleteBtn:hover, .doneBtn:hover{
+    outline: none;
+    box-shadow: 0px 0px 3px 2px black;
+}
+
+.deleteBtn:focus, .doneBtn:focus{
+    outline: none;
+    box-shadow: 0px 0px 5px 2px black;
+}
+
+.doneBtn:disabled{
+    background-color: wheat;
+    box-shadow: none;
+}
+
+@media all and (max-width: 991px) {
+    input[id="todo-input-box"]{
+        flex-grow: 1;
+    }
+}
